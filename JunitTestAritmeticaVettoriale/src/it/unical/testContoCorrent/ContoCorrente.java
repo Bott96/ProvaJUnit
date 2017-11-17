@@ -12,6 +12,7 @@ public class ContoCorrente {
 	{
 		if(importo>0)
 			saldo+=importo;
+		
 		else
 			throw new IllegalArgumentException("Importo inserito negativo");
 	}
