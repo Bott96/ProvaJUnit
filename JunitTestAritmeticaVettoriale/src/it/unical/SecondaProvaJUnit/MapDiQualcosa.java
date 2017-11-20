@@ -10,9 +10,14 @@ public class MapDiQualcosa {
 		m.put(i, n);
 	}
 
-	public void remove(int i) {
+	public int getSize() {
+		return m.size();
+	}
+
+	public void remove(int i) throws RuntimeException {
 
 		if (m.size() == 0) {
+			System.out.println("Wntro");
 			throw new RuntimeException("Mappa Vuota");
 		}
 
@@ -27,6 +32,11 @@ public class MapDiQualcosa {
 		m.addElem(1, "sasa");
 		m.addElem(3, "sasa");
 		m.addElem(2, "sasa");
+
+		m.remove(1);
+		m.remove(2);
+		m.remove(4);
+		m.remove(4);
 
 	}
 
