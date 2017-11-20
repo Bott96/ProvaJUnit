@@ -22,17 +22,20 @@ public class SuperEroi {
 		return lstSuper.get(i);
 	}
 
-	
-	public int getSize(){
+	public boolean getEroe(String s) {
+		return lstSuper.contains(s);
+	}
+
+	public int getSize() {
 		return lstSuper.size();
 	}
-	
-	public void removeSuper(String s) throws IllegalArgumentException{
 
-		if(!lstSuper.contains(s))
+	public void removeSuper(String s) throws IllegalArgumentException {
+
+		if (!lstSuper.contains(s))
 			throw new IllegalArgumentException("no obj inside");
-		
+
 		lstSuper.remove(s);
-		
+
 	}
 }
