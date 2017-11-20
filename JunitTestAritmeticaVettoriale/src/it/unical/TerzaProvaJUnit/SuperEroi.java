@@ -22,6 +22,11 @@ public class SuperEroi {
 		return lstSuper.get(i);
 	}
 
+	
+	public int getSize(){
+		return lstSuper.size();
+	}
+	
 	public void removeSuper(String s) throws IllegalArgumentException{
 
 		if(!lstSuper.contains(s))
